@@ -32,11 +32,11 @@ public class FirstTest {
     }
 
     @Severity(SeverityLevel.CRITICAL)
-    @Description("Test Description: Verify Google page title is correct")
-    @Epic("EP001")
-    @Feature("Feature: Google Search")
-    @Story("Story: Verify page title")
-    @Step("Open Google and verify title")
+    @Description("Test Description: Verification of filters on parfum tab")
+    @Epic("TC-001")
+    @Feature("Feature: Parfum tab filters verification")
+    @Story("Story: Parfum tab filters verification")
+    @Step("Parfum tab filters verification")
     @Test(description = "Verification of test 1", dataProvider = "searchCriteria", dataProviderClass = SearchCriteria.class)
     public void firstTest(String produktart, String geschenkFur, String furWen) throws Exception {
         homePageFeature.navigateToParfumTab();
